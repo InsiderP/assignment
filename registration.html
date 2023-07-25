@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Event Registration</h2>
+    <form id="registrationForm">
+      <label for="delegatePass">Select Delegate Pass:</label>
+      <select id="delegatePass" name="delegatePass">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <label for="guestPass">Select Guest Pass:</label>
+      <select id="guestPass" name="guestPass">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <div id="guestsSection" style="display: none;">
+        <!-- Guest form fields will be dynamically added here -->
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <script src="registration.js"></script>
+</body>
+</html>
